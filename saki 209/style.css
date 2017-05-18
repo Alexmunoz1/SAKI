@@ -1,0 +1,18 @@
+body {
+  background: url('https://media.tenor.co/images/36998c5e57eb083202f091b2783fdeb1/tenor.gif') !important;
+}
+ 
+#masthead,
+#primary {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  background-color: #fff;
+  padding: 20px !important;
+}
+#masthead {
+  background: none;
+}
+#masthead img, #primary img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
