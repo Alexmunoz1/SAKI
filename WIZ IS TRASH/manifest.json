@@ -1,15 +1,14 @@
 {
   "manifest_version": 2,
-
-  "name": "GTmetrix Analyzer Plugin",
-  "description": "This extension will analyze a page using GTmetrix",
-  "version": "1.0",
-
-  "browser_action": {
-   "default_icon": "icon2.png",
-   "default_popup": "popup.html"
-  },
-  "permissions": [
-   "activeTab"
-   ]
+ 
+  "name": "Modify CSS and HTML",
+  "version": "0.1.0",
+  "description": "Lateral blog post demo extension",
+ 
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["content.js"],
+    "matches": ["<all_urls>"]
+  }]
+ 
 }
