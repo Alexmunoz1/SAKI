@@ -4,11 +4,18 @@
   "name": "Modify CSS and HTML",
   "version": "0.1.0",
   "description": "Lateral blog post demo extension",
- 
-  "content_scripts": [{
+    
+    
+    "content_scripts": [{
     "css": ["styles.css"],
-    "js": ["content.js"],
-    "matches": ["<all_urls>"]
-  }]
+    "matches" : [ "<all_urls>"]
+  }],
+    
  
+"browser_action": {
+    "default_popup": "popup.html"
+},
+    "permissions" : [
+        "tabs"
+    ]
 }
